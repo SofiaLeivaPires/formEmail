@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- action - recebe o endereço do arquivo/ página onde os dados serão enviados.
+         method - determina como os dados serão enviados.                            -->
+    <form action="https://formsubmit.co/sofia.leivapires@gmail.com" method="post">
+        <div class="container">
+            
+            <div class="titulo">
+                <label for="titulo" >Cadastro</label>
+            </div>
+          
+        <!-- 1 Formulário -->
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Nome e sobrenome."maxlength="30">
+            <!-- maxlength = VARCHAR(30) Modelagem BD -->
+            <br><br>
+
+            <!-- EMAIL -->
+            <label for="email">E-mail</label>
+            <input type="email" id="email" maxlength="50" required autocomplete
+            placeholder="email@email.com.">
+            <!-- autocomplete: Quando o usuário preencha o campo e envia o formulário, os dados ficam salvos;
+                 assim, caso ele queira envia o formulário novamente, não é necessário redigitar todos os dados. -->
+            <br><br>
+            
+            <!-- TELEFONE -->
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel" maxlength="11" required autocomplete="off"
+            placeholder="(XX) XXXXX-XXXX.">
+            <br><br>
+
+            <!-- CURRÍCULO -->
+            <label for="curriculum">Currículo</label>
+            <input type="file" name="curriculum" id="curriculum">
+            <br><br>
+
+            <!-- MENSAGEM -->
+            <div><label for="message">Mensagem</label></div>
+            <textarea style="resize: none;" name="message" id="message" cols="20" rows="5" 
+            maxlength="200" placeholder="Digite aqui sua mensagem."></textarea>   
+
+            <!-- ENVIAR -->
+            <div>
+                <label for="submit" id="submit"></label>
+            </div>
+            <input type="submit" id="submit">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/pageSucesso.html">
+        </div>
+    </form>
+</body>
+</html>
