@@ -1,8 +1,5 @@
 # formEmail
 
-Como deixou o formulário funcional (envio de form para um E-mail)
-Comandos Git que usou para criar e publicar seu repositótio no GitHub
-
  O formulário foi criado na aula de Linguagem de Marcação, utilizando linguagens como: HTML e CSS, foi utilizado:
  - Elementos: form, div, input.
  - Atributos: id, class, type.
